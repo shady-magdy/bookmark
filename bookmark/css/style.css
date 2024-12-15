@@ -1,0 +1,70 @@
+main {
+    height: 100%;
+    background-color: #eddecb;
+    position: relative;
+}
+
+main h1 {
+    padding-top: 5%;
+    font-family: Pacifico;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 3%;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+}
+
+main h1::before {
+
+    content: "";
+    background-color: #fec260;
+    width: 20%;
+    height: 15%;
+    z-index: -1;
+    position: absolute;
+    left: 40%;
+    bottom: 10px;
+    transition: all 800ms;
+}
+
+main h1:hover::before {
+    height: 30%;
+
+}
+
+.bookmark {
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+
+}
+
+.mm {
+    margin-left: 45%
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main h2 {
+    font-family: "Righteous", cursive;
+
+    font-size: 25px;
+    transition: all 600ms;
+}
+
+main h2:hover {
+
+    font-size: 28px;
+
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}

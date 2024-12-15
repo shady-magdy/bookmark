@@ -1,0 +1,39 @@
+:root{
+ --mian-color:red
+}
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../slider-02.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.nav-link:hover ,.navbar-nav .nav-link.active {
+    color: var(--mian-color);
+   
+}
+.nav-link{
+    color: white;
+    font-weight: 500px;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    width: 0;
+height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: var(--mian-color);
+    transition: all 0.5s;
+}
+.nav-link:hover::after{
+   
+    width: 60%;
+}
+.content a{
+color: var(--mian-color)
+}
+h1{
+    font-size: 60px;
+}
